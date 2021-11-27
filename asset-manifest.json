@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/SounderGrad_EmployeeManagementSystem/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/SounderGrad_EmployeeManagementSystem/static/js/main.388a84eb.chunk.js",
+    "main.js.map": "/SounderGrad_EmployeeManagementSystem/static/js/main.388a84eb.chunk.js.map",
+    "runtime-main.js": "/SounderGrad_EmployeeManagementSystem/static/js/runtime-main.93e9f727.js",
+    "runtime-main.js.map": "/SounderGrad_EmployeeManagementSystem/static/js/runtime-main.93e9f727.js.map",
+    "static/css/2.164c32f7.chunk.css": "/SounderGrad_EmployeeManagementSystem/static/css/2.164c32f7.chunk.css",
+    "static/js/2.5add592d.chunk.js": "/SounderGrad_EmployeeManagementSystem/static/js/2.5add592d.chunk.js",
+    "static/js/2.5add592d.chunk.js.map": "/SounderGrad_EmployeeManagementSystem/static/js/2.5add592d.chunk.js.map",
+    "index.html": "/SounderGrad_EmployeeManagementSystem/index.html",
+    "static/css/2.164c32f7.chunk.css.map": "/SounderGrad_EmployeeManagementSystem/static/css/2.164c32f7.chunk.css.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/SounderGrad_EmployeeManagementSystem/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.5add592d.chunk.js.LICENSE.txt": "/SounderGrad_EmployeeManagementSystem/static/js/2.5add592d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.93e9f727.js",
+    "static/css/2.164c32f7.chunk.css",
+    "static/js/2.5add592d.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.388a84eb.chunk.js"
+  ]
+}
