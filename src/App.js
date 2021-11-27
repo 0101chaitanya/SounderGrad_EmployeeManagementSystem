@@ -1,24 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Login from './components/Login';
+import NavigationBar from './components/NavBar';
+import { useSelector } from 'react-redux';
+import { Route, Routes, Navigate } from 'react-router-dom';
+import User from './components/user/User';
+import Intro from './components/admin/Intro';
+import Users from './components/admin/Users';
+import WeeklySchedule from './components/admin/WeeklySchedule';
+import TimeLine from './components/user/TimeLine';
 
 function App() {
+  const { globalState } = useSelector((state) => state);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavigationBar />
+      <Routes>
+        {globalState.valid ? (
+          globalState.admin ? (
+            <>
+              <Route path='/' element={<Intro />} />
+              <Route path='users' element={<Users />} />
+              <Route path='/schedule' element={<WeeklySchedule />} />
+              <Route path='/*' element={<Navigate to='/' />} />
+            </>
+          ) : (
+            <>
+              <Route path='/' element={<User />} />
+
+              <Route path='/timeline' element={<TimeLine />} />
+              <Route path='/*' element={<Navigate to='/' />} />
+            </>
+          )
+        ) : (
+          <>
+            <Route path='/' element={<Login />} />
+            <Route path='*' element={<Navigate to='/' />} />
+          </>
+        )}
+      </Routes>
+    </>
   );
 }
 
